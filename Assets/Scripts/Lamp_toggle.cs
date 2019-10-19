@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Lamp_toggle : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject LightObject;
+    public GameObject gameObject;
+    private TextMeshPro One, OneText, Two, TwoText;
 
 
 
     // Start is called before the first frame update
-   
+
 
     protected virtual void Update()
     {
@@ -19,13 +21,13 @@ public class Lamp_toggle : MonoBehaviour
 
     public void valueChanged(bool a)
     {
-        if (LightObject.activeSelf)
+        if (gameObject.activeSelf)
         {
-            LightObject.SetActive(false);
+            gameObject.SetActive(false);
         }
         else
         {
-            LightObject.SetActive(true);
+            gameObject.SetActive(true);
         }
     }
 }
