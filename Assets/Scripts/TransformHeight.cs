@@ -16,7 +16,11 @@ public class TransformHeight : MonoBehaviour
     {
         
     }
-
+    public void updateLocation()
+    {
+        transform.position = new Vector3(0, 0, 0);
+        ceiling.SetActive(true);
+    }
     public void updateShortHeight() {
         transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
         ceiling.SetActive(true);
